@@ -2,7 +2,7 @@
 PHOTO_DIR="/photos"
 AUTH_DIR="/auth"
 username="$1"
-username="$2"
+password="$2"
 
 if ! mountpoint -q $PHOTO_DIR; then
     echo "Photo target directory missing, please pass it as a Docker volume, e.g.:"
